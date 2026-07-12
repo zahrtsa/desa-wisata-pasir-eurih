@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "nama": "Sumur Jalatunda",
+    "badge": "Cagar Budaya 2010",
+    "deskripsi": "Sumur dari zaman Prabu Siliwangi — dipercaya airnya tidak pernah surut dan berkhasiat menyembuhkan.",
+    "foto": "/images/situs/sumur_jalatunda.jpg"
+  },
+  {
+    "id": 2,
+    "nama": "Taman Sribaginda",
+    "badge": "Cagar Budaya 2010",
+    "deskripsi": "Kolam bersejarah dialiri Sumur Jalatunda — konon tidak pernah kering walau musim kemarau panjang.",
+    "foto": "/images/situs/taman_sribaginda.jpg"
+  },
+  {
+    "id": 3,
+    "nama": "Kampung Sindang Barang",
+    "badge": "Cagar Budaya Lokal",
+    "deskripsi": "Kampung adat dengan tatanan sosial dan arsitektur tradisional Sunda yang masih terjaga.",
+    "foto": "/images/situs/kampung_sindangbarang.jpg"
+  }
+]

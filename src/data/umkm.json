@@ -1,0 +1,139 @@
+{
+  "umkmProducts": [
+    {
+      "id": "sandal-leather",
+      "category": "kerajinan",
+      "title": "Sandal Kulit Pasir Eurih (Legendaris)",
+      "price": 125000,
+      "desc": "Sandal kulit handmade premium yang dijahit rapi oleh perajin veteran pembuat sepatu tertua Pasir Eurih.",
+      "spec": "Bahan: Kulit sapi asli, Sol karet anti slip, ukuran 38-44.",
+      "image": "/images/fasilitas/umkm/sandal-kulit.jpg"
+    },
+    {
+      "id": "liwet-pawon",
+      "category": "kuliner",
+      "title": "Paket Liwet Kastrol Pawon",
+      "price": 85000,
+      "desc": "Nasi liwet beraroma daun jeruk, dipanggang di tungku kayu bakar asli dengan lauk asin peda, lalap daun segar, & sambal goang.",
+      "spec": "Porsi: Cukup untuk 3-4 orang.",
+      "image": "/images/fasilitas/umkm/liwet-kastrol.jpg"
+    },
+    {
+      "id": "pla-plus",
+      "category": "kuliner",
+      "title": "Pla Plus - Minuman Khas Pasir Eurih",
+      "price": 15000,
+      "desc": "Minuman tradisional autentik khas Desa Pasir Eurih yang menyegarkan sekaligus menyehatkan, diolah dengan resep turun-temurun.",
+      "spec": "Kemasan: Botol siap minum / Gelas bambu saji.",
+      "image": "/images/fasilitas/umkm/pla-plus.jpg"
+    },
+    {
+      "id": "bamboo-anyaman",
+      "category": "kerajinan",
+      "title": "Boboko / Bakul Nasi Bambu Hitam",
+      "price": 45000,
+      "desc": "Anyaman halus bambu wulung (bambu hitam) buatan ibu-ibu desa untuk wadah nasi tradisional tahan lama dan estetik.",
+      "spec": "Bahan: Bambu hitam alami, diameter 22cm.",
+      "image": "/images/fasilitas/umkm/boboko-bambu.jpg"
+    },
+    {
+      "id": "wedang-pala",
+      "category": "kuliner",
+      "title": "Wedang Pala Tradisional",
+      "price": 12000,
+      "desc": "Minuman hangat berkhasiat tinggi berbahan dasar buah pala pilihan khas Pasir Eurih yang ampuh mengatasi insomnia dan menghangatkan tubuh.",
+      "spec": "Kemasan: Botol siap minum.",
+      "image": "/images/fasilitas/umkm/makanan-ringan-khas.jpg",
+      "isCircle": true,
+      "objectPosition": "object-[28%_45%]"
+    },
+    {
+      "id": "jipang-desa",
+      "category": "kuliner",
+      "title": "Jipang Ketan Tradisional",
+      "price": 10000,
+      "desc": "Camilan manis renyah legendaris berbahan dasar beras ketan dan balutan gula merah asli buatan tangan ibu-ibu warga desa.",
+      "spec": "Isi per bungkus: 5 - 10 pcs.",
+      "image": "/images/fasilitas/umkm/makanan-ringan-khas.jpg",
+      "isCircle": true,
+      "objectPosition": "object-[20%_62%]"
+    },
+    {
+      "id": "keripik-pisang-singkong",
+      "category": "kuliner",
+      "title": "Duo Keripik (Pisang & Singkong)",
+      "price": 15000,
+      "desc": "Paket combo keripik pisang dan singkong renyah yang diiris tipis secara tradisional tanpa bahan pengawet.",
+      "spec": "Berat bersih: 250 gram per kemasan.",
+      "image": "/images/fasilitas/umkm/makanan-ringan-khas.jpg",
+      "isCircle": true,
+      "objectPosition": "object-[40%_65%]"
+    },
+    {
+      "id": "kembang-goyang",
+      "category": "kuliner",
+      "title": "Kue Kembang Goyang Renyah",
+      "price": 15000,
+      "desc": "Kue tradisional berbentuk bunga matahari yang renyah, gurih, dengan sentuhan manis wijen yang khas.",
+      "spec": "Kemasan: Toples / Plastik bening 200g.",
+      "image": "/images/fasilitas/umkm/kumpulan-makanan/frame_001.png"
+    },
+    {
+      "id": "bolu-gulung-keju",
+      "category": "kuliner",
+      "title": "Bolu Gulung Mini Keju",
+      "price": 25000,
+      "desc": "Bolu gulung lembut rasa stroberi pandan dengan filling krim manis dan taburan keju parut melimpah di atasnya.",
+      "spec": "Isi: 1 gulung panjang / 6 potong saji.",
+      "image": "/images/fasilitas/umkm/kumpulan-makanan/frame_002.png"
+    },
+    {
+      "id": "lapis-singkong-pelangi",
+      "category": "kuliner",
+      "title": "Kue Ongol-Ongol / Lapis Singkong Pelangi",
+      "price": 12000,
+      "desc": "Jajanan pasar kenyal berbahan dasar singkong parut dengan warna-warni cantik yang disajikan bersama parutan kelapa muda gurih.",
+      "spec": "Mika saji isi 5-8 potong.",
+      "image": "/images/fasilitas/umkm/kumpulan-makanan/frame_003.png"
+    },
+    {
+      "id": "puding-marmer-stroberi",
+      "category": "kuliner",
+      "title": "Puding Marmer Topping Stroberi",
+      "price": 35000,
+      "desc": "Puding busa lembut bermotif marmer cokelat-mentega yang dipercantik dengan buah stroberi segar di bagian tengahnya.",
+      "spec": "Ukuran: Cetakan diameter 18cm.",
+      "image": "/images/fasilitas/umkm/kumpulan-makanan/frame_005.png"
+    },
+    {
+      "id": "palawija-rebus",
+      "category": "kuliner",
+      "title": "Camilan Rebusan Tradisional (Palawija)",
+      "price": 20000,
+      "desc": "Hidangan sehat khas pedesaan berupa kombinasi pisang rebus, jagung manis manis hangat, dan singkong empuk yang dikukus segar.",
+      "spec": "Disajikan hangat di atas tampah bambu kecil.",
+      "image": "/images/fasilitas/umkm/kumpulan-makanan/frame_006.png"
+    }
+  ],
+  "sectionImages": {
+    "sejarahPengrajin": {
+      "src": "/images/fasilitas/umkm/sejarah-pengrajin.png",
+      "alt": "Proses Pemotongan dan Penjahitan Pola Sandal Kulit di Bengkel Kerja Pasir Eurih"
+    },
+    "kreativitasAnyaman": {
+      "src": "/images/fasilitas/umkm/kios-anyaman.png",
+      "alt": "Berbagai Hasil Anyaman Bambu seperti Kukusan Nasi, Tampah, dan Suvenir"
+    },
+    "galeriKios": {
+      "images": [
+        "/images/fasilitas/umkm/galeri-kios-1.jpg",
+        "/images/fasilitas/umkm/galeri-kios-2.jpg",
+        "/images/fasilitas/umkm/galeri-kios-3.jpg",
+        "/images/fasilitas/umkm/galeri-kios-4.jpg"
+      ],
+      "alt": "Galeri Foto Kios-Kios Kerajinan dan Souvenir Tradisional"
+    },
+    "posterPermainan": "/images/fasilitas/umkm/poster-permainan.png",
+    "posterPlaPlus": "/images/fasilitas/umkm/poster-plaplus.png"
+  }
+}

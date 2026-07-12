@@ -1,0 +1,22 @@
+{
+  "heroImages": {
+    "bersama": "/images/hero-bersama.png"
+  },
+  "stats": [
+    { "value": "10K+", "label": "Pengunjung / Thn", "type": "smile" },
+    { "value": "45+", "label": "Pengrajin Sepatu", "type": "store" },
+    { "value": "2009", "label": "Tahun Berdiri", "type": "history" },
+    { "value": "3+", "label": "Sanggar Budaya", "type": "award" }
+  ],
+  "pengurus": [
+    { "nama": "Abah Deden Supandi", "jabatan": "Ketua Pengurus", "img": "/images/pengurus.png" },
+    { "nama": "Kang Mulyana", "jabatan": "Sekretaris & Humas", "img": "/images/pengurus/pengurus2.jpg" },
+    { "nama": "Teh Susi Susanti", "jabatan": "Bendahara & UMKM", "img": "/images/pengurus/pengurus3.jpg" }
+  ],
+  "misi": [
+    { "no": "01", "title": "Pemberdayaan Ekonomi Lokal", "desc": "Mengangkat derajat dan ekosistem para pengrajin sepatu lokal legendaris serta memperluas digitalisasi pasar UMKM kreatif warga.", "color": "border-l-[#B96832]" },
+    { "no": "02", "title": "Edukasi & Pewarisan Tradisi", "desc": "Menyediakan wadah interaktif yang adaptif bagi generasi muda untuk mempelajari kaulinan lembur, seni musik, dan situs sejarah kuno.", "color": "border-l-[#4D5B2F]" },
+    { "no": "03", "title": "Konservasi Alam Berkelanjutan", "desc": "Merawat keasrian lingkungan lereng Gunung Salak melalui konsep ecotourism yang menjaga kebersihan ekologis secara absolut.", "color": "border-l-[#A7C48A]" }
+  ],
+  "tags": ["Kaulinan Sunda", "Sejarah Pajajaran", "Alam Gunung Salak"]
+}

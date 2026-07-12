@@ -1,0 +1,74 @@
+{
+    "hero": {
+    "tagline": "Ancient Heritage Trail",
+    "titleLine1": "Situs Tradisi",
+    "titleLine2": "Pajajaran Kuno",
+    "description": "Menelusuri kembali episentrum spiritual Kampung Adat Sindang Barang di Pasir Eurih. Tempat di mana budaya ratusan tahun dirawat tulus melalui keseharian masyarakat tani lereng Gunung Salak.",
+    "image": "/images/budaya/hero-ritual.jpeg",
+    
+    "originYear": "Bajidor Kahot", 
+    "originDesc": "Pesonan gerak dinamis perpaduan ketukan jaipongan dan ketangkasan rakyat.",
+    "originVideo": "/videos/budaya/bajidor.mp4" 
+    },
+  "history": {
+    "tagline": "The Genesis",
+    "title": "Kutabarang, \nMedan Ksatria.",
+    "quote": "\"Kisah Pasir Eurih bermula dari luhurnya penghormatan terhadap alam, di mana adat dirawat sebagai napas kehidupan sehari-hari warga lembur.\"",
+    "description1": "Wilayah Pasir Eurih dahulu berfungsi sebagai pusat pelatihan fisik ketangkasan bertarung bagi para prajurit andalan kerajaan kuno.",
+    "description2": "Merujuk pada publikasi berkala profil @desawisata_pasireurih, struktur kebudayaan asli tetap dilestarikan lewat upacara panen tahunan, sekolah kesenian tradisional, serta perawatan cagar cadas kuno.",
+    "image": "/images/budaya/suasana-lembur.jpg"
+  },
+  "trilogy": {
+    "tagline": "The Heritage Trilogy",
+    "title": "Situs Sakral Sindang Barang",
+    "description": "Tiga elemen poros budaya yang menjadi tiang penopang spiritualitas kehidupan komunal di lereng kaki Gunung Salak.",
+    "items": [
+      {
+        "name": "Kampung Sindang Barang",
+        "desc": "Pemukiman adat Sunda tertua sejak abad ke-12. Berfungsi sebagai pusat pelestarian arsitektur rumah tradisional Imah Gede, lumbung padi (Leuit), dan episentrum utama upacara adat Seren Taun.",
+        "image": "/images/situs/kampung_sindangbarang.jpg"
+      },
+      {
+        "name": "Sumur Jalatunda",
+        "desc": "Mata air purba tempat pensucian diri (reresik) fisik dan batin bagi para ksatria Sunda kuno sebelum menimba ilmu ketangkasan.",
+        "image": "/images/situs/sumur_jalatunda.jpg"
+      },
+      {
+        "name": "Taman Sribaginda",
+        "desc": "Kolam air purba estetis tempat pemandian dan bersantai para permaisuri kerajaan bawahan Pajajaran di masa lampau.",
+        "image": "/images/situs/taman_sribaginda.jpg"
+      }
+    ]
+  },
+  "megalithic": {
+    "tagline": "Megalithic Trails",
+    "title": "Sebaran Punden Prasejarah",
+    "description": "Terdapat sekitar 33 titik punden berundak kuno purbakala yang dilindungi erat oleh sesepuh adat di lingkungan desa.",
+    "batuKarut": {
+      "title": "Situs Batu Karut",
+      "desc": "Menhir prasejarah raksasa sepanjang 9 meter yang kokoh berdiri sebagai pusat spiritual magis masyarakat lereng gunung kuno.",
+      "image": "/images/budaya/batu-karut.jpg"
+    },
+    "batuTapak": {
+      "title": "Prasasti Batu Tapak",
+      "desc": "Hamparan batu datar dengan cetakan relief telapak kaki purba nyata sebagai tapal batas tanda wilayah kekuasaan adat.",
+      "image": "/images/budaya/batu-tapak.jpg"
+    }
+  },
+  "livingArts": {
+    "tagline": "Living Arts",
+    "title": "Kesenian & Kaulinan Lembur",
+    "items": [
+      { "id": "01", "title": "Rengkong Padi", "image": "/images/budaya/rengkong.jpg", "desc": "Seni pikul hasil panen menggunakan bambu gombong bertali ijuk yang menghasilkan resonansi suara ritmis unik." },
+      { "id": "02", "title": "Angklung Gubrag", "image": "/images/budaya/angklung.jpg", "desc": "Instrumen bambu purba berumur ratusan tahun guna menghormati dan mengundang kelimpahan Dewi Sri." },
+      { "id": "03", "title": "Reog Sunda", "image": "/images/budaya/reog.jpg", "desc": "Teater rakyat interaktif yang memadukan tabuhan dongdog jepret, tarian komikal, dan petuah bijak lembur." },
+      { "id": "04", "title": "Kaulinan Lembur", "image": "/images/budaya/kaulinan.jpg", "desc": "Nostalgia permainan tradisional luar ruangan anak kampung seperti egrang jangkung, bakiak, dan gasing kayu." }
+    ]
+  },
+  "serenTaun": {
+    "tagline": "Annual Thanksgiving",
+    "title": "Upacara Agung Seren Taun",
+    "desc": "Setiap tahunnya, masyarakat menumpahkan rasa syukur berkah pangan lewat helaran parade panen. Padi diarak sakral beriringan menuju Leuit (lumbung padi komunal) diiringi tabuhan musik tradisional penolak bala.",
+    "image": "/images/budaya/seren-taun.jpg"
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "hero": {
+    "tag": "INSPIRASI ARSITEKTUR @RURI.BAM",
+    "titleWord1": "Bale",
+    "titleWord2": "Budaya",
+    "location": "Pasir Eurih",
+    "description": "Mahakarya struktur bambu ruang terbuka yang eksotis. Terinspirasi dari gaya arsitektur Nusantara, tempat ini menjadi ruang komunal interaktif serta pusat pelestarian kesenian dan edukasi tradisi lokal yang dirawat hidup."
+  },
+  "angklungNotes": [
+    { "note": "DA", "fileName": "da.mp3", "soundName": "Do (High/C5)", "height": "h-16" },
+    { "note": "MI", "fileName": "mi.mp3", "soundName": "Re (Mid/E4)", "height": "h-20" },
+    { "note": "NA", "fileName": "na.mp3", "soundName": "Mi (Low/A3)", "height": "h-24" }
+  ],
+  "bentoContent": {
+    "simfoniBambu": {
+      "tag": "🎭 Pentas Seni & Kreativitas",
+      "title": "Panggung Pertunjukan Tradisional",
+      "description": "Di bawah naungan struktur atap ijuk yang megah, area aula utama ini sering digunakan sebagai tempat pementasan tari tradisional, musik calung, hingga ruang diskusi budaya yang nyaman dan menyatu dengan alam.",
+      "image": {
+        "src": "/images/fasilitas/bale/pertunjukan-seni.png",
+        "alt": "Suasana aula pendopo bambu saat digunakan untuk acara berkumpul atau pementasan seni"
+      }
+    },
+    "desainBambu": {
+      "title": "Desain Bambu Hitam",
+      "description": "Struktur bangunan utama didesain menggunakan material lokal kokoh pilihan, mengadopsi teknik kuncian pasak tradisional tanpa paku besi yang menjaga fleksibilitas bangunan terhadap gempa bumi.",
+      "fact": "Material bambu dirawat khusus dengan metode perendaman alami agar anti-rayap dan bertahan puluhan tahun."
+    },
+    "kaulinanBudak": {
+      "tag": "🪁 Olahraga Tradisional",
+      "title": "Kaulinan Budak Lembur",
+      "description": "Kembalikan memori masa kecil lewat interaksi sosial nyata. Arena luar ruangan kami menyediakan permainan egrang, balap bakiak raksasa, hingga adu ketangkasan gasing kayu penumpas stres.",
+      "image": {
+        "src": "/images/fasilitas/bale/kaulinan-bakiak2.jpg",
+        "alt": "Keseruan rombongan anak-anak dan dewasa bermain lomba bakiak panjang"
+      }
+    },
+    "serenTaun": {
+      "tag": "🌾 Ritual Adat Karuhun",
+      "title": "Pelestarian Ritme Seren Taun",
+      "description": "Bale Budaya juga menjadi saksi sejarah prosesi sakral penumbukan padi massal di lumbung tradisional. Pengunjung dapat mempelajari langsung filosofi luhur masyarakat Sunda dalam menghormati alam dan ketahanan pangan.",
+      "image": {
+        "src": "/images/fasilitas/bale/seren-taun.jpg",
+        "alt": "Prosesi adat penari perempuan membawa padi atau pesta panen adat Sunda"
+      }
+    }
+  }
+}

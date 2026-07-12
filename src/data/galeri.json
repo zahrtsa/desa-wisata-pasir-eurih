@@ -1,0 +1,106 @@
+[
+  {
+    "id": "1",
+    "src": "/images/galeri/4grid-desa.jpg",
+    "tag": "Warga",
+    "type": "photo",
+    "size": "large",
+    "caption": "Potret kehangatan Abah Deden bersama warga, merangkum keasrian suasana pemukiman dan kelezatan kuliner otentik Desa Pasir Eurih."
+  },
+  {
+    "id": "2",
+    "src": "/images/galeri/tari-topeng.jpg",
+    "tag": "Budaya",
+    "type": "photo",
+    "size": "tall",
+    "caption": "Geliat pelestarian seni tradisional melalui ekspresi magis sang penari dalam pementasan Tari Topeng Sunda."
+  },
+  {
+    "id": "3",
+    "src": "/images/galeri/tari-pekan-raya.jpg",
+    "tag": "Budaya",
+    "type": "photo",
+    "size": "normal",
+    "caption": "Momen membanggakan kontingen tari Pasir Eurih saat berhasil menyabet penghargaan kategori Favorit di Festival Pekan Raya."
+  },
+  {
+    "id": "4",
+    "src": "/images/galeri/pletokan.jpg",
+    "tag": "Warga",
+    "type": "photo",
+    "size": "normal",
+    "caption": "Keceriaan anak-anak sekolah dasar saat melestarikan permainan tradisional pletokan di halaman desa."
+  },
+  {
+    "id": "5",
+    "src": "/images/galeri/go-to-school.jpg",
+    "tag": "Warga",
+    "type": "photo",
+    "size": "normal",
+    "caption": "Kebersamaan parade edukasi dalam program 'Pasir Eurih Go to School' untuk mengenalkan kearifan lokal sejak dini."
+  },
+  {
+    "id": "6",
+    "src": "/images/galeri/kegiatan-mengolahikan.jpg",
+    "tag": "Kriya",
+    "type": "photo",
+    "size": "normal",
+    "caption": "Geliat ekonomi kreatif kelompok wanita tani (KWT) saat mengolah hasil budidaya ikan menjadi kuliner khas."
+  },
+  {
+    "id": "7",
+    "src": "/images/galeri/proses-sepatu.jpg",
+    "tag": "Kriya",
+    "type": "photo",
+    "size": "large",
+    "caption": "Aktivitas kolektif para pengrajin lokal dalam memproduksi sol dan sepatu rajut, tulang punggung UMKM legendaris desa."
+  },
+  {
+    "id": "8",
+    "src": "/images/galeri/pengaspalanjaling.jpg",
+    "tag": "Warga",
+    "type": "photo",
+    "size": "normal",
+    "caption": "Semangat gotong royong warga dan pengurus dalam pengerjaan pengaspalan jalan lingkungan demi kenyamanan akses wisata."
+  },
+  {
+    "id": "9",
+    "src": "/images/galeri/curug-pasir-eurih.png",
+    "tag": "Alam",
+    "type": "photo",
+    "size": "tall",
+    "caption": "Pesona tersembunyi kesegaran air terjun alami dan suasana asri menenangkan di kawasan Curug Pasir Eurih."
+  },
+  {
+    "id": "10",
+    "src": "/images/galeri/batukarut.jpg",
+    "tag": "Alam",
+    "type": "photo",
+    "size": "normal",
+    "caption": "Situs geologi Batu Karut, salah satu spot ikonik yang menyimpan cerita legenda dan keunikan formasi alam."
+  },
+  {
+    "id": "11",
+    "src": "/images/galeri/kolaborasi-ftup.jpg",
+    "tag": "Warga",
+    "type": "photo",
+    "size": "large",
+    "caption": "Pemandangan landscape bentang desa dalam program kolaborasi strategis pembangunan wilayah bersama Fakultas Teknik Universitas Pancasila."
+  },
+  {
+    "id": "12",
+    "src": "/images/galeri/mapag-penganten.jpg",
+    "tag": "Budaya",
+    "type": "photo",
+    "size": "normal",
+    "caption": "Kemeriahan prosesi upacara adat Mapag Penganten sebagai simbol penghormatan luhur dalam menyambut tamu agung."
+  },
+  {
+    "id": "13",
+    "src": "/images/galeri/pelestarian-tamansribaginda.jpg",
+    "tag": "Budaya",
+    "type": "photo",
+    "size": "normal",
+    "caption": "Upaya konservasi berkala di Situs Taman Sri Baginda, petilasan bersejarah Kerajaan Sindang Barang yang tetap dirawat asri."
+  }
+]

@@ -1,0 +1,42 @@
+{
+  "pesanggrahanDetail": {
+    "src": "/images/fasilitas/homestay/pesanggrahan-detail.jpg",
+    "alt": "Detail Kamar Rumah Adat Bilik Bambu Pasir Eurih",
+    "caption": "Detail Rumah Adat Bilik Bambu, Kasur Kapuk dengan Kelambu Putih"
+  },
+  "wargaDetail": {
+    "src": "/images/fasilitas/homestay/warga-detail.jpg",
+    "alt": "Kamar Homestay Rumah Warga Pasir Eurih",
+    "caption": "Kamar Homestay Warga Bersih & Nyaman dengan Nuansa Kayu Lokal"
+  },
+  "arsitekturHero": {
+    "src": "/images/fasilitas/homestay/arsitektur-hero.jpg",
+    "alt": "Deretan Rumah Adat Rumbia Pasir Eurih",
+    "caption": "Deretan Rumah Adat Rumbia Berjejer Indah di Area Kampung Adat"
+  },
+  "tradisiWarga": {
+    "src": "/images/fasilitas/homestay/makan-bersama.jpeg",
+    "alt": "Tradisi Makan Bersama Warga Lokal Pasir Eurih",
+    "caption": "Tuan Rumah Sedang Menyajikan Hidangan Makan Bersama Pengunjung"
+  },
+  "cuciTangan": {
+    "src": "/images/fasilitas/homestay/cuci-tangan.jpg",
+    "alt": "Tempat Cuci Tangan Air Mengalir Pasir Eurih",
+    "caption": "Tempat Cuci Tangan Air Mengalir"
+  },
+  "wastafel": {
+    "src": "/images/fasilitas/homestay/wastafel.jpg",
+    "alt": "Wastafel Penginapan Pasir Eurih",
+    "caption": "Wastafel"
+  },
+  "standProduk": {
+    "src": "/images/fasilitas/homestay/stand-produk.jpg",
+    "alt": "Stand Produk UMKM Pasir Eurih",
+    "caption": "Stand Produk"
+  },
+  "sekretariat": {
+    "src": "/images/fasilitas/homestay/sekretariat.jpg",
+    "alt": "Sekretariat Desa Pasir Eurih",
+    "caption": "Sekretariat Desa"
+  }
+}

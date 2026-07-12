@@ -1,0 +1,133 @@
+[
+  {
+    "id": "paket-a",
+    "nama": "Paket Katineung (A)",
+    "tagline": "Mulih Ka Lembur",
+    "tipe": "One Day Tour",
+    "minPax": 50,
+    "highlights": [
+      "Welcome Drink Wedang Pala",
+      "Praktek Menanam Padi",
+      "Free Makan Siang"
+    ],
+    "deskripsi": "Nikmati esensi kehidupan pedesaan yang damai dalam satu hari penuh. Mulai dari kehangatan suguhan wedang pala tradisional, belajar turun langsung membajak lumpur sawah, hingga memahami proses budidaya ikan air tawar langsung bersama ahlinya.",
+    "kegiatan": [
+      "Pertunjukan kesenian tradisional (Reog / Jaipong / Calung)",
+      "Welcome drink berupa snack ringan & minuman wedang pala khas",
+      "Pengenalan sejarah Kampung Sindang Barang sebagai desa wisata",
+      "Pengenalan & keseruan mainan tradisional (Bakiak, Enggrang, dll)",
+      "Praktek langsung menanam padi di area persawahan",
+      "Kunjungan edukasi perikanan (Menangkap ikan & praktek pembenihan)",
+      "Fasilitas Free Makan Siang dengan menu lokal"
+    ],
+    "hargaPelajar": 145000,
+    "hargaUmum": 165000,
+    "hargaFlat": null,
+    "images": [
+      "/images/wisata/paket-a-1.png",
+      "/images/wisata/paket-a-2.jpg",
+      "/images/wisata/paket-a-3.jpg",
+      "/images/wisata/paket-a-4.jpg"
+    ]
+  },
+  {
+    "id": "paket-b",
+    "nama": "Paket Budaya & Purbakala (B)",
+    "tagline": "Mulih Ka Lembur",
+    "tipe": "One Day Tour",
+    "minPax": 50,
+    "highlights": [
+      "Tracking Situs Purbalaka",
+      "Pengrajin Sepatu Sandal",
+      "Marak Lauk (Tangkap Ikan)"
+    ],
+    "deskripsi": "Gabungan sempurna petualangan alam terbuka dan eksplorasi sejarah purbakala. Rasakan keseruan menyusuri jejak peradaban masa lalu, dilanjutkan dengan kunjungan ke industri kreatif kerajinan lokal dan tradisi marak lauk yang penuh gelak tawa.",
+    "kegiatan": [
+      "Pertunjukan kesenian tradisional (Reog / Jaipong / Calung)",
+      "Welcome drink berupa snack ringan & minuman wedang pala hangat",
+      "Pengenalan sejarah Kampung Sindang Barang sebagai desa wisata",
+      "Pengenalan & kompetisi mainan tradisional (Bakiak, Enggrang, dll)",
+      "Tracking seru menuju Situs Sejarah Purbalaka",
+      "Praktek menanam padi turun langsung ke lumpur sawah",
+      "Kunjungan edukasi ke workshop pengrajin sepatu sandal lokal",
+      "Marak Lauk (Keseruan menangkap ikan bersama di kolam)",
+      "Fasilitas Free Makan Siang prasmanan tengah sawah"
+    ],
+    "hargaPelajar": 150000,
+    "hargaUmum": 175000,
+    "hargaFlat": null,
+    "images": [
+      "/images/wisata/paket-b-1.jpg",
+      "/images/wisata/paket-b-2.jpg",
+      "/images/wisata/paket-b-3.jpg",
+      "/images/wisata/paket-b-4.jpg"
+    ]
+  },
+  {
+    "id": "paket-c",
+    "nama": "Paket Jelajah Industri Kreatif (C)",
+    "tagline": "Mulih Ka Lembur",
+    "tipe": "Full Day Tour",
+    "minPax": 50,
+    "highlights": [
+      "Petualangan Seni & Budaya",
+      "Eksplorasi Industri Kreatif",
+      "Agrowisata Lengkap"
+    ],
+    "deskripsi": "Paket lengkap penjelajahan budaya Sunda interaktif. Mengajak rombongan besar menyatukan sinergi melalui rangkaian kesenian alat musik calung, tracking situs bersejarah, permainan ketangkasan tradisional, hingga agrowisata pembenihan padi.",
+    "kegiatan": [
+      "Sesi pembuka: Pertunjukan kesenian (Reog / Jaipong / Calung)",
+      "Welcome drink otentik (Snack ringan & minuman wedang pala)",
+      "Tracking budaya menuju Situs Purbakala setempat",
+      "Kunjungan eksklusif ke rumah produksi pengrajin sepatu sandal",
+      "Edukasi mendalam sejarah Kampung Sindang Barang",
+      "Praktek & perlombaan permainan tradisional Sunda",
+      "Marak Lauk (Basah-basahan menangkap ikan di kolam)",
+      "Praktek interaktif menanam padi dari pembibitan",
+      "Fasilitas Free Makan Siang bersama seluruh rombongan"
+    ],
+    "hargaPelajar": 165000,
+    "hargaUmum": 185000,
+    "hargaFlat": null,
+    "images": [
+      "/images/wisata/paket-c-1.jpg",
+      "/images/wisata/paket-c-2.jpg",
+      "/images/wisata/paket-c-3.jpg",
+      "/images/wisata/paket-c-4.jpg"
+    ]
+  },
+  {
+    "id": "paket-d",
+    "nama": "Paket Eksplorasi & Homestay (D)",
+    "tagline": "Saweungi Di Lembur",
+    "tipe": "2 Days 1 Night",
+    "minPax": null,
+    "highlights": [
+      "Akomodasi Homestay Desa",
+      "Workshop Kuliner & Kriya",
+      "3x Makan Prasmanan"
+    ],
+    "deskripsi": "Rasakan kenyamanan bermalam di rumah adat atau homestay warga lokal di lereng gunung yang sejuk. Dikombinasikan dengan kelas memasak kudapan tradisional, tracking malam/pagi hari, serta fasilitas 3x makan prasmanan dengan cita rasa hidangan Sunda yang khas.",
+    "kegiatan": [
+      "Penyambutan: Pertunjukan kesenian (Reog / Jaipong / Calung)",
+      "Fasilitas gratis 2x snack ringan & minuman wedang pala",
+      "Pengenalan sejarah Kampung Sindang Barang (Desa Wisata)",
+      "Praktek & keseruan mainan tradisional Sunda",
+      "Akomodasi nyaman menuju homestay rumah warga lokal",
+      "Tracking edukatif menuju kawasan Situs Purbalaka",
+      "Belajar membuat kerajinan kriya sepatu sandal khas",
+      "Workshop kuliner: Belajar membuat kue kampung & wedang pala",
+      "Marak Lauk (Keseruan menangkap ikan di kolam desa)",
+      "Fasilitas 3x makan prasmanan (Menu Pagi, Siang, dan Malam)"
+    ],
+    "hargaFlat": 350000,
+    "hargaPelajar": null,
+    "hargaUmum": null,
+    "images": [
+      "/images/wisata/paket-d-1.jpg",
+      "/images/wisata/paket-d-2.jpg",
+      "/images/wisata/paket-d-3.jpg",
+      "/images/wisata/paket-d-4.jpg"
+    ]
+  }
+]
