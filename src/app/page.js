@@ -7,7 +7,7 @@ import {
   Navigation, Camera, MessageCircle, ArrowRight,
   ChevronLeft, ChevronRight, Users, Star,
   GraduationCap, User, ClipboardCheck, PhoneCall, CalendarDays, CheckCircle2,
-  Sparkles, BookOpen, HelpCircle, Eye, Volume2, VolumeX
+  Sparkles, BookOpen, HelpCircle, Eye, Volume2, VolumeX, Plus, Minus
 } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
@@ -33,10 +33,39 @@ export default function Home() {
   const [activeImageIndexes, setActiveImageIndexes] = useState({});
   const [selectedSitus, setSelectedSitus] = useState(situsData[0]?.id || null);
   const [isPlaying, setIsPlaying] = useState(false);
+  const [openFaqIndex, setOpenFaqIndex] = useState(null);
+  
   const scrollRef = useRef(null);
-  const audioRef = useRef(null);
+  const audioRef = useRef(null); // <-- Penambahan const di sini
 
-  // ── PERBAIKAN: Solusi Autoplay tanpa memicu warning Linter ──
+  // Data FAQ
+  const faqData = [
+    {
+      question: "Bagaimana cara melakukan reservasi paket wisata atau homestay?",
+      answer: "Anda dapat menghubungi kontak pengelola kami melalui WhatsApp (Pak Desen untuk informasi umum/wisata/homestay dan Pak Yaya untuk produk UMKM/kuliner). Reservasi disarankan dilakukan beberapa hari sebelum tanggal kunjungan untuk memastikan ketersediaan tempat."
+    },
+    {
+      question: "Apakah lokasi Desa Wisata Pasir Eurih dapat diakses bus besar?",
+      answer: "Ya, akses jalan dan area parkir terpadu di kawasan Desa Wisata Pasir Eurih memadai untuk manuver serta parkir armada bus besar rombongan sekolah maupun instansi."
+    },
+    {
+      question: "Apakah ada minimal jumlah peserta (min. pax) untuk paket wisata?",
+      answer: "Setiap paket wisata memiliki ketentuan minimal peserta yang berbeda (umumnya mulai dari 50 pax). Namun untuk kunjungan perorangan atau keluarga kecil, Anda tetap dapat berkoordinasi dengan pengelola kami."
+    },
+    {
+      question: "Fasilitas apa saja yang didapatkan saat menginap di Homestay Desa?",
+      answer: "Homestay mengusung konsep rumah warga lokal yang bersih dan asri, dilengkapi dengan kasur nyaman, kamar mandi bersih, sajian masakan khas Sunda, serta suasana pedesaan yang tenang di kaki Gunung Salak."
+    },
+    {
+      question: "Apa saja jam operasional kunjungan di Pasir Eurih?",
+      answer: "Kawasan Desa Wisata Pasir Eurih beroperasi setiap hari mulai pukul 08:00 WIB hingga 17:00 WIB. Bagi tamu homestay, layanan reservasi dan check-in dapat disesuaikan dengan kesepakatan bersama pengelola."
+    }
+  ];
+
+  const toggleFaq = (index) => {
+    setOpenFaqIndex(openFaqIndex === index ? null : index);
+  };
+
   useEffect(() => {
     const handleFirstInteraction = () => {
       if (audioRef.current) {
@@ -68,7 +97,6 @@ export default function Home() {
       }
     }
   };
-  
 
   const changePreviewImage = (paketId, imageIndex, e) => {
     e.stopPropagation();
@@ -171,7 +199,7 @@ export default function Home() {
               <Link href="/wisata" className="bg-brand-green hover:bg-brand-green-light text-white text-xs md:text-sm font-bold px-7 py-4 rounded-xl transition-all shadow-md transform hover:-translate-y-0.5">
                 Jelajahi Wisata
               </Link>
-              <Link href="/homestay" className="bg-white hover:bg-brand-cream text-brand-earth border border-brand-border text-xs md:text-sm font-bold px-7 py-4 rounded-xl transition-colors shadow-xs">
+              <Link href="/fasilitas/homestay" className="bg-white hover:bg-brand-cream text-brand-earth border border-brand-border text-xs md:text-sm font-bold px-7 py-4 rounded-xl transition-colors shadow-xs">
                 Lihat Homestay
               </Link>
             </motion.div>
@@ -340,7 +368,7 @@ export default function Home() {
 
                         <motion.a
                           whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.98 }}
-                          href={`https://wa.me/6281210002190?text=Sampurasun%20Admin,%20booking%20[${paket.nama}]`}
+                          href={`https://wa.me/6285695146164?text=Sampurasun%20Pak%20Desen,%20saya%20tertarik%20booking%20[${paket.nama}]`}
                           target="_blank" rel="noopener noreferrer"
                           className="bg-brand-green hover:bg-brand-green-light text-white text-[11px] font-bold px-4 py-2.5 rounded-xl flex items-center justify-center gap-1.5 cursor-pointer w-full sm:w-auto text-center"
                         >
@@ -377,7 +405,7 @@ export default function Home() {
                     onClick={() => setSelectedSitus(situs.id)}
                     whileHover={{ x: 6, scale: 1.01 }}
                     whileTap={{ scale: 0.99 }}
-                    className={`p-3 text-left rounded-2xl border transition-all flex items-center gap-4 relative overflow-hidden group ${
+                    className={`p-3 text-left rounded-2xl border transition-all flex items-center gap-4 relative overflow-hidden group cursor-pointer ${
                       isSelected 
                         ? "bg-white text-brand-dark border-transparent shadow-xl" 
                         : "bg-white/5 border-white/10 text-brand-cream hover:bg-white/10"
@@ -454,7 +482,7 @@ export default function Home() {
                       <Sparkles size={14} className="text-brand-earth animate-pulse flex-shrink-0" />
                       <span>Tertarik melakukan riset / studi lapangan sekolah?</span>
                     </div>
-                    <Link href="/wisata" className="text-xs font-bold text-brand-green flex items-center gap-0.5 hover:underline whitespace-nowrap">
+                    <Link href="/budaya" className="text-xs font-bold text-brand-green flex items-center gap-0.5 hover:underline whitespace-nowrap">
                       Hubungi Pemandu Budaya <ArrowRight size={12} />
                     </Link>
                   </div>
@@ -526,7 +554,7 @@ export default function Home() {
         </div>
       </section>
 
-     {/* ── 5. DOKUMENTASI VISUAL ── */}
+      {/* ── 5. DOKUMENTASI VISUAL ── */}
       <section className="bg-brand-cream px-6 py-24 border-t border-brand-border">
         <div className="max-w-6xl mx-auto">
           <div className="flex flex-col sm:flex-row justify-between items-start sm:items-end mb-12 gap-4">
@@ -539,7 +567,6 @@ export default function Home() {
             </Link>
           </div>
 
-          {/* MASONRY GRID DINAMIS DARI GALERI JSON */}
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 auto-rows-[160px] sm:auto-rows-[200px]">
             {dataGaleri && dataGaleri.slice(0, 5).map((foto, idx) => {
               let gridLayout = "col-span-1 row-span-1";
@@ -582,7 +609,6 @@ export default function Home() {
             })}
           </div>
 
-          {/* State Pengaman jika data JSON kosong */}
           {(!dataGaleri || dataGaleri.length === 0) && (
             <div className="text-center py-12 border border-dashed border-brand-border rounded-2xl bg-white/50">
               <p className="text-xs font-medium text-brand-muted">Belum ada dokumentasi foto yang tersedia.</p>
@@ -592,7 +618,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ── 6. PETUNJUK AKSES NAVIGASI ── */}
+      {/* ── 6. PETUNJUK AKSES NAVIGASI (MAPS) ── */}
       <section className="bg-gradient-to-br from-brand-cream via-white to-brand-green-tint/30 px-6 py-24 border-t border-brand-border/60 overflow-hidden relative">
         <div className="absolute top-1/2 left-[-10%] w-[400px] h-[400px] bg-brand-earth/5 blur-3xl rounded-full pointer-events-none" />
         
@@ -609,7 +635,6 @@ export default function Home() {
           <div className="grid lg:grid-cols-12 gap-8 items-stretch">
             <div className="lg:col-span-5 flex flex-col gap-5 justify-between">
               
-              {/* Card 1: Aksesibilitas Bus */}
               <motion.div 
                 whileHover={{ x: 8 }}
                 transition={{ type: "spring", stiffness: 200, damping: 15 }}
@@ -628,7 +653,6 @@ export default function Home() {
                 </div>
               </motion.div>
 
-              {/* Card 2: Jam Operasional */}
               <motion.div 
                 whileHover={{ x: 8 }}
                 transition={{ type: "spring", stiffness: 200, damping: 15 }}
@@ -647,7 +671,6 @@ export default function Home() {
                 </div>
               </motion.div>
               
-              {/* Card 3: Alamat Kawasan */}
               <motion.div 
                 whileHover={{ x: 8 }}
                 transition={{ type: "spring", stiffness: 200, damping: 15 }}
@@ -681,6 +704,74 @@ export default function Home() {
               </div>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* ── 7. FREQUENTLY ASKED QUESTIONS (FAQ) ── */}
+      <section className="bg-white px-6 py-24 border-t border-brand-border/60 relative overflow-hidden">
+        <div className="max-w-4xl mx-auto">
+          
+          <div className="text-center mb-14">
+            <span className="text-[10px] font-bold text-brand-earth uppercase tracking-[0.2em] bg-brand-cream border border-brand-border px-3 py-1.5 rounded-full inline-flex items-center gap-1.5 mb-3">
+              <HelpCircle size={13} className="text-brand-green" /> Pertanyaan Umum
+            </span>
+            <h2 className="text-2xl md:text-3xl font-black tracking-tight text-brand-dark mb-2">
+              Pertanyaan Sering Diajukan
+            </h2>
+            <p className="text-xs md:text-sm font-medium text-brand-muted max-w-md mx-auto">
+              Informasi praktis seputar kunjungan, reservasi, dan fasilitas di Desa Wisata Pasir Eurih.
+            </p>
+          </div>
+
+          <div className="space-y-4">
+            {faqData.map((faq, index) => {
+              const isOpen = openFaqIndex === index;
+              return (
+                <motion.div
+                  key={index}
+                  initial={{ opacity: 0, y: 15 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.3, delay: index * 0.05 }}
+                  className={`rounded-2xl border transition-all duration-200 overflow-hidden ${
+                    isOpen 
+                      ? "bg-brand-cream/40 border-brand-green/40 shadow-sm" 
+                      : "bg-white border-brand-border hover:border-brand-green/30"
+                  }`}
+                >
+                  <button
+                    onClick={() => toggleFaq(index)}
+                    className="w-full px-6 py-4 text-left flex items-center justify-between gap-4 cursor-pointer"
+                  >
+                    <span className="text-xs sm:text-sm font-bold text-brand-dark leading-snug">
+                      {faq.question}
+                    </span>
+                    <div className={`p-1.5 rounded-full shrink-0 transition-transform duration-300 ${
+                      isOpen ? "bg-brand-green text-white rotate-180" : "bg-brand-cream text-brand-dark"
+                    }`}>
+                      {isOpen ? <Minus size={14} /> : <Plus size={14} />}
+                    </div>
+                  </button>
+
+                  <AnimatePresence>
+                    {isOpen && (
+                      <motion.div
+                        initial={{ height: 0, opacity: 0 }}
+                        animate={{ height: "auto", opacity: 1 }}
+                        exit={{ height: 0, opacity: 0 }}
+                        transition={{ duration: 0.25, ease: "easeInOut" }}
+                      >
+                        <div className="px-6 pb-5 pt-1 border-t border-brand-border/30 text-xs text-brand-muted leading-relaxed font-medium">
+                          {faq.answer}
+                        </div>
+                      </motion.div>
+                    )}
+                  </AnimatePresence>
+                </motion.div>
+              );
+            })}
+          </div>
+
         </div>
       </section>
 

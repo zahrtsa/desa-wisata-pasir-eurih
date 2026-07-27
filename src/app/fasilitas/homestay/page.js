@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Link from "next/link"; 
-import Image from "next/image"; // ── 1. IMPORT NEXT/IMAGE DI SINI ──
+import Image from "next/image";
 import { 
   Home, Calendar, Users, ShieldCheck, Sparkles, 
   ArrowRight, MessageCircle, Droplet, Coffee, Heart, BedDouble, ChevronLeft, ChevronRight
@@ -11,6 +11,9 @@ import {
 
 // ── IMPORT DATA FOTO DARI FILE EKSTERNAL ──
 import homestayImages from "@/data/homestay.json"; 
+
+// ── DATA KONTAK PENGELOLA ──
+const CONTACT_DESEN = "6285695146164"; // Nomor Pak Desen untuk Fasilitas & Homestay
 
 // ── DATA STATIS (Dipindahkan ke luar komponen agar hemat memori & mencegah re-render) ──
 const FASILITAS_LIST = [
@@ -32,7 +35,7 @@ export default function HomestayDesaPage() {
   const [activeTab, setActiveTab] = useState("detail");
   const [currentFasilitasIndex, setCurrentFasilitasIndex] = useState(0);
 
-  // Efek Auto-Play Slider (Sekarang aman dan bersih dari dependency issue)
+  // Efek Auto-Play Slider
   useEffect(() => {
     const timer = setInterval(() => {
       setCurrentFasilitasIndex((prevIndex) => (prevIndex + 1) % FASILITAS_LIST.length);
@@ -52,7 +55,7 @@ export default function HomestayDesaPage() {
 
   const generateWaText = () => {
     const typeLabel = stayType === "pesanggrahan" ? "Rumah Pesanggrahan Adat (Paket Sawengi)" : "Homestay Rumah Warga (Paket Mulih Ka Lembur)";
-    const rawMessage = `Halo Admin Desa Wisata Pasir Eurih,\n\nSaya ingin memesan akomodasi penginapan dengan rincian berikut:\n- Tipe Penginapan: ${typeLabel}\n- Durasi Menginap: ${nights} malam\n- Jumlah Tamu: ${guests} orang\n- Estimasi Total Biaya: ${formatRupiah(totalCost)}\n\nMohon info ketersediaan kamar pada tanggal terdekat. Terima kasih!`;
+    const rawMessage = `Sampurasun Pak Desen,\n\nSaya ingin memesan akomodasi penginapan di Desa Wisata Pasir Eurih dengan rincian berikut:\n- Tipe Penginapan: ${typeLabel}\n- Durasi Menginap: ${nights} malam\n- Jumlah Tamu: ${guests} orang\n- Estimasi Total Biaya: ${formatRupiah(totalCost)}\n\nMohon informasi ketersediaan kamar pada tanggal terdekat. Terima kasih!`;
     return encodeURIComponent(rawMessage);
   };
 
@@ -123,7 +126,14 @@ export default function HomestayDesaPage() {
                   <span className="text-[9px] text-stone-400 uppercase tracking-wider block">Estimasi Total Biaya</span>
                   <span className="text-lg font-black text-amber-400">{formatRupiah(totalCost)}</span>
                 </div>
-                <motion.a whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} href={`https://wa.me/6281234567890?text=${generateWaText()}`} target="_blank" rel="noopener noreferrer" className="bg-amber-500 text-black text-xs font-bold py-2.5 px-4 rounded-xl flex items-center gap-1.5 cursor-pointer shadow-lg">
+                <motion.a 
+                  whileHover={{ scale: 1.05 }} 
+                  whileTap={{ scale: 0.95 }} 
+                  href={`https://wa.me/${CONTACT_DESEN}?text=${generateWaText()}`} 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="bg-amber-500 text-black text-xs font-bold py-2.5 px-4 rounded-xl flex items-center gap-1.5 cursor-pointer shadow-lg"
+                >
                   <MessageCircle size={14} /> <span>Pesan via WA</span>
                 </motion.a>
               </div>
@@ -175,7 +185,6 @@ export default function HomestayDesaPage() {
                     <div className="bg-stone-50 p-3 rounded-xl border border-stone-100"><span className="font-bold text-[#2D3E25] block">Tipe Tempat Tidur</span><span className="text-stone-500">Lesehan Kasur Kapuk Alami</span></div>
                   </div>
                 </div>
-                {/* ── 2. EDIT IMG MENJADI COMPONENT NEXT/IMAGE ── */}
                 <div className="md:col-span-5 overflow-hidden rounded-2xl border border-stone-200 bg-stone-100 h-72 md:h-80 group relative">
                   <Image src={homestayImages.pesanggrahanDetail.src} alt={homestayImages.pesanggrahanDetail.alt} fill className="object-cover object-center transition-transform duration-500 group-hover:scale-103" />
                 </div>
@@ -194,7 +203,6 @@ export default function HomestayDesaPage() {
                     <div className="bg-stone-50 p-3 rounded-xl border border-stone-100"><span className="font-bold text-[#2D3E25] block">Layanan Tambahan</span><span className="text-stone-500">Sarapan Masakan Tuan Rumah</span></div>
                   </div>
                 </div>
-                {/* ── 3. EDIT IMG MENJADI COMPONENT NEXT/IMAGE ── */}
                 <div className="md:col-span-5 overflow-hidden rounded-2xl border border-stone-200 bg-stone-100 h-72 md:h-80 group relative">
                   <Image src={homestayImages.wargaDetail.src} alt={homestayImages.wargaDetail.alt} fill className="object-cover object-center transition-transform duration-500 group-hover:scale-103" />
                 </div>
@@ -213,7 +221,6 @@ export default function HomestayDesaPage() {
               <h2 className="text-2xl md:text-3xl font-black text-[#1A2616] tracking-tight">Keunikan Fisik Rumah Pesanggrahan</h2>
               <p className="text-xs md:text-sm text-stone-600 leading-relaxed">{homestayImages.arsitekturHero.caption}. Terbuat sepenuhnya dari anyaman bambu hitam halus dan beratapkan rumbia rimbun.</p>
             </div>
-            {/* ── 4. EDIT IMG MENJADI COMPONENT NEXT/IMAGE ── */}
             <div className="mt-8 h-48 relative overflow-hidden rounded-2xl border border-stone-200 bg-stone-100">
               <Image src={homestayImages.arsitekturHero.src} alt={homestayImages.arsitekturHero.alt} fill className="object-cover" />
             </div>
@@ -239,7 +246,6 @@ export default function HomestayDesaPage() {
               <h3 className="text-xl font-extrabold text-[#1A2616] tracking-tight">Tradisi Guyub Warga</h3>
               <p className="text-xs text-stone-600 leading-relaxed">{homestayImages.tradisiWarga.caption}. Ikut makan lesehan nasi hangat beralas daun pisang bersama pemilik rumah.</p>
             </div>
-            {/* ── 5. EDIT IMG MENJADI COMPONENT NEXT/IMAGE ── */}
             <div className="mt-6 h-36 relative overflow-hidden rounded-xl border border-stone-200 bg-stone-100">
               <Image src={homestayImages.tradisiWarga.src} alt={homestayImages.tradisiWarga.alt} fill className="object-cover" />
             </div>
@@ -280,7 +286,6 @@ export default function HomestayDesaPage() {
 
               <div className="md:col-span-6">
                 <div className="w-full aspect-square relative overflow-hidden rounded-2xl border border-stone-200 bg-stone-100 shadow-sm">
-                  {/* ── 6. EDIT MOTION.IMG MENJADI COMPONENT NEXT/IMAGE DI BUNGKUS MOTION ── */}
                   <AnimatePresence mode="wait">
                     <motion.div
                       key={currentFasilitasIndex}
@@ -360,7 +365,7 @@ export default function HomestayDesaPage() {
             </div>
             <motion.a
               whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.98 }}
-              href={`https://wa.me/6281234567890?text=${encodeURIComponent(`Halo Admin, saya ingin bertanya info penginapan rombongan.`)}`}
+              href={`https://wa.me/${CONTACT_DESEN}?text=${encodeURIComponent(`Sampurasun Pak Desen, saya ingin bertanya info penginapan rombongan di Desa Pasir Eurih.`)}`}
               target="_blank" rel="noopener noreferrer"
               className="bg-amber-500 hover:bg-amber-600 text-black text-xs font-bold py-3 px-4 rounded-xl flex items-center justify-center gap-2 transition-colors cursor-pointer shadow-md"
             >

@@ -7,13 +7,16 @@ import {
   Sparkles, ArrowRight, MessageCircle, Volume2
 } from "lucide-react";
 import Link from "next/link";
-import Image from "next/image"; // IMPORT NEXT/IMAGE UNTUK FIX WARNING
+import Image from "next/image";
 
-// IMPORT DATA JSON ASLI MILIKMU
+// IMPORT DATA JSON ASLI
 import data from "@/data/baleBudaya.json"; 
 
 export default function BaleBudayaPage() {
   const [playedNote, setPlayedNote] = useState(null);
+
+  // Kontak Pengelola Utama (Pak Desen - Wisata & Fasilitas Sanggar/Bale Budaya)
+  const CONTACT_PAK_DESEN = "6285695146164";
 
   const playBambooSound = (noteName, fileName) => {
     setPlayedNote(noteName);
@@ -34,7 +37,7 @@ export default function BaleBudayaPage() {
         <motion.div animate={{ y: [0, 20, 0] }} transition={{ repeat: Infinity, duration: 8, ease: "easeInOut", delay: 1 }} className="absolute top-1/3 right-10 w-64 h-64 bg-amber-200/20 rounded-full blur-3xl" />
       </div>
 
-      {/* HERO BANNER: HIGH CONTRAST DARK GREEN */}
+      {/* HERO BANNER */}
       <section className="relative bg-[#1A2616] text-white px-6 py-20 md:py-28 text-left overflow-hidden border-b-4 border-amber-500/20">
         <div className="absolute inset-0 opacity-5 bg-[radial-gradient(#ffffff_1px,transparent_1px)] bg-[size:16px_16px]" />
         
@@ -53,7 +56,7 @@ export default function BaleBudayaPage() {
             </p>
           </div>
           
-          {/* MINI INSTRUMEN SIMULATOR (MENYESUAIKAN DA-MI-NA) */}
+          {/* MINI INSTRUMEN SIMULATOR (DA-MI-NA) */}
           <div className="md:col-span-5 bg-black/40 backdrop-blur-xl border border-white/10 p-6 rounded-3xl shadow-2xl relative">
             <div className="absolute -top-3 -right-3 bg-amber-500 text-black font-black text-[10px] px-2.5 py-1 rounded-md rotate-6 shadow-lg animate-bounce">
               KLIK TABUNG!
@@ -117,7 +120,6 @@ export default function BaleBudayaPage() {
               </p>
             </div>
             
-            {/* FIX: Menggunakan komponen Image dengan properti fill & relative wrapper */}
             <div className="mt-6 h-60 md:h-72 w-full bg-stone-100 rounded-2xl overflow-hidden border border-stone-200 shadow-inner relative">
               <Image 
                 src={data.bentoContent.simfoniBambu.image.src} 
@@ -158,7 +160,6 @@ export default function BaleBudayaPage() {
               </p>
             </div>
             
-            {/* FIX: Menggunakan komponen Image */}
             <div className="mt-6 h-48 w-full bg-stone-100 rounded-2xl overflow-hidden border border-stone-200 shadow-inner relative">
               <Image 
                 src={data.bentoContent.kaulinanBudak.image.src} 
@@ -182,7 +183,6 @@ export default function BaleBudayaPage() {
               </p>
             </div>
             
-            {/* FIX: Menggunakan komponen Image */}
             <div className="mt-6 h-48 w-full bg-stone-100 rounded-2xl overflow-hidden border border-stone-200 shadow-inner relative">
               <Image 
                 src={data.bentoContent.serenTaun.image.src} 
@@ -219,20 +219,21 @@ export default function BaleBudayaPage() {
             </div>
           </div>
 
+          {/* BOX RESERVASI - TERHUBUNG KE PAK DESEN */}
           <div className="bg-[#1A2616] text-white rounded-2xl p-6 flex flex-col justify-between space-y-4">
             <div className="space-y-1">
               <div className="text-xs font-bold text-amber-400 font-mono tracking-wider">RESERVASI KELOMPOK</div>
               <p className="text-[11px] text-stone-300 leading-relaxed font-light">
-                Agendakan sesi khusus dengan opsi hidangan makan siang Nasi Liwet Tradisional beralas daun pisang.
+                Agendakan sesi khusus bersama Pak Desen untuk kunjungan & reservasi fasilitas Bale Budaya.
               </p>
             </div>
             <motion.a
               whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.98 }}
-              href={`https://wa.me/6281234567890?text=${encodeURIComponent(`Halo Admin, saya ingin berdiskusi perihal paket kunjungan rombongan ke fasilitas Bale Budaya.`)}`}
+              href={`https://wa.me/${CONTACT_PAK_DESEN}?text=${encodeURIComponent(`Sampurasun Pak Desen, saya ingin berdiskusi perihal paket kunjungan rombongan / reservasi di Bale Budaya Desa Pasir Eurih.`)}`}
               target="_blank" rel="noopener noreferrer"
               className="bg-amber-500 hover:bg-amber-600 text-black text-xs font-bold py-3 px-4 rounded-xl flex items-center justify-center gap-2 transition-colors cursor-pointer shadow-md"
             >
-              <MessageCircle size={14} /> <span>Hubungi Kontak Sanggar</span> <ArrowRight size={12} />
+              <MessageCircle size={14} /> <span>Hubungi Pak Desen</span> <ArrowRight size={12} />
             </motion.a>
           </div>
         </div>

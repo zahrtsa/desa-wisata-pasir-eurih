@@ -3,13 +3,13 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Link from "next/link";
-import Image from "next/image"; // 👈 Ditambahkan untuk optimasi gambar
+import Image from "next/image";
 import { 
   ShoppingBag, Sparkles, MessageCircle, 
   Utensils, Plus, Minus, Video, Cookie
 } from "lucide-react";
 
-// ── EKSTRAKSI DATA DENGAN ES6 IMPORT (AMAN UNTUK CLIENT COMPONENT) ──
+// ── EKSTRAKSI DATA DENGAN ES6 IMPORT ──
 import rawData from "@/data/umkm.json";
 
 const umkmProducts = rawData?.umkmProducts || [];
@@ -18,6 +18,9 @@ const sectionImages = rawData?.sectionImages || {};
 export default function UmkmKulinerPage() {
   const [filter, setFilter] = useState("all");
   const [cart, setCart] = useState({});
+
+  // ── CONTACT PERSON KHUSUS UMKM & KULINER (PAK YAYA) ──
+  const PHONE_PAK_YAYA = "6285695146164"; // Sesuaikan jika ada nomor WA Pak Yaya yang berbeda
 
   const addToCart = (id) => {
     setCart((prev) => ({
@@ -62,7 +65,7 @@ export default function UmkmKulinerPage() {
       .filter(Boolean)
       .join("\n");
 
-    const rawMessage = `Halo Pengelola UMKM Desa Wisata Pasir Eurih,\n\nSaya tertarik untuk memesan produk/kuliner berikut untuk kunjungan saya nanti:\n${itemsText}\n\nEstimasi Total Pesanan: ${formatRupiah(getCartTotal())}\nMohon info tata cara penyajian dan ketersediaan stoknya. Terima kasih!`;
+    const rawMessage = `Sampurasun Pak Yaya,\n\nSaya tertarik untuk memesan produk/kuliner Desa Wisata Pasir Eurih berikut:\n\n${itemsText}\n\n*Estimasi Total Pesanan: ${formatRupiah(getCartTotal())}*\nMohon info ketersediaan stok & tata cara pemesanan. Terima kasih!`;
     return encodeURIComponent(rawMessage);
   };
 
@@ -127,7 +130,7 @@ export default function UmkmKulinerPage() {
             <div className="space-y-3 min-h-[120px] max-h-[220px] overflow-y-auto pr-1">
               {Object.keys(cart).length === 0 ? (
                 <div className="text-center py-8 text-xs text-stone-400 italic">
-                  Keranjang masih kosong. Klik tombol &quot;+&quot; pada katalog di bawah untuk menambahkan produk. {/* 👈 FIX ERROR TANDA PETIK */}
+                  Keranjang masih kosong. Klik tombol &quot;+&quot; pada katalog di bawah untuk menambahkan produk.
                 </div>
               ) : (
                 Object.entries(cart).map(([id, qty]) => {
@@ -158,11 +161,11 @@ export default function UmkmKulinerPage() {
                 </div>
                 <motion.a
                   whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}
-                  href={`https://wa.me/6281234567890?text=${generateWaText()}`}
+                  href={`https://wa.me/${PHONE_PAK_YAYA}?text=${generateWaText()}`}
                   target="_blank" rel="noopener noreferrer"
                   className="bg-amber-500 text-black text-xs font-bold py-2.5 px-4 rounded-xl flex items-center gap-1.5 cursor-pointer shadow-lg hover:bg-amber-600 transition-colors"
                 >
-                  <MessageCircle size={14} /> <span>Pesan via WA</span>
+                  <MessageCircle size={14} /> <span>Pesan ke Pak Yaya</span>
                 </motion.a>
               </div>
             )}
@@ -255,7 +258,7 @@ export default function UmkmKulinerPage() {
                 src={sectionImages.sejarahPengrajin?.src || "/images/fasilitas/umkm/sejarah-pengrajin.jpg"} 
                 alt={sectionImages.sejarahPengrajin?.alt || "Proses Pemotongan Sandal"} 
                 fill
-                sizes="(max-w-768px) 100vw, 66vw"
+                sizes="(max-width: 768px) 100vw, 66vw"
                 className="object-cover object-center"
               />
             </div>
@@ -271,7 +274,7 @@ export default function UmkmKulinerPage() {
             </div>
             <div className="border-t border-white/10 pt-4 mt-6">
               <span className="text-[9px] font-mono tracking-widest text-amber-400 block uppercase font-bold">INFO RASA</span>
-              <p className="text-xs italic text-stone-200 mt-1">&quot;Disajikan dengan pelengkap lalapan segar yang dipetik langsung dari kebun belakang homestay.&quot;</p> {/* 👈 FIX ERROR TANDA PETIK */}
+              <p className="text-xs italic text-stone-200 mt-1">&quot;Disajikan dengan pelengkap lalapan segar yang dipetik langsung dari kebun belakang homestay.&quot;</p>
             </div>
           </div>
         </div>
@@ -295,7 +298,7 @@ export default function UmkmKulinerPage() {
                       src={item.image} 
                       alt={item.title} 
                       fill
-                      sizes="(max-w-640px) 50vw, 20vw"
+                      sizes="(max-width: 640px) 50vw, 20vw"
                       className="object-cover object-center" 
                     />
                   </div>
@@ -333,7 +336,7 @@ export default function UmkmKulinerPage() {
                   src="/images/fasilitas/umkm/makanan-ringan-khas.jpg" 
                   alt="Koleksi Camilan dan Minuman Ringan Tradisional Pasir Eurih" 
                   fill
-                  sizes="(max-w-1024px) 100vw, 33vw"
+                  sizes="(max-width: 1024px) 100vw, 33vw"
                   className="object-cover group-hover:scale-105 transition-transform duration-500" 
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent pointer-events-none" />
@@ -471,7 +474,7 @@ export default function UmkmKulinerPage() {
                 src={sectionImages.kreativitasAnyaman?.src || "/images/fasilitas/umkm/kios-anyaman.jpg"} 
                 alt={sectionImages.kreativitasAnyaman?.alt || "Hasil Anyaman Bambu"} 
                 fill
-                sizes="(max-w-1024px) 100vw, 25vw"
+                sizes="(max-width: 1024px) 100vw, 25vw"
                 className="object-cover"
               />
             </div>
@@ -488,7 +491,7 @@ export default function UmkmKulinerPage() {
                       src={imgUrl} 
                       alt={`${sectionImages.galeriKios?.alt || "Foto Kios"} ${idx + 1}`} 
                       fill
-                      sizes="(max-w-768px) 50vw, 20vw"
+                      sizes="(max-width: 768px) 50vw, 20vw"
                       className="object-cover group-hover:scale-105 transition-transform duration-300"
                     />
                   </div>
